@@ -1,0 +1,12 @@
+version: '2.1'
+services:
+  api-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      .env
+    image: "azure-properties-service"
+    ports:
+      - 8887:8887
+    restart: always

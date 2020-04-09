@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: azure-properties
+server:
+  port: 8887
+
+management:
+  endpoint:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: env
